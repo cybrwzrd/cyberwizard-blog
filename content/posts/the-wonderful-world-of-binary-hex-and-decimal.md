@@ -25,7 +25,7 @@ Decimal, or base 10, is what you're probably used to dealing with on a daily bas
 
 > 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 
-![Decimal](/uploads/decimal.png)
+![Decimal](/uploads/decimal.png#center)
 
 The handy thing about decimal is that working in groups of 10 makes for nice easy math, as we'll see shortly.
 
@@ -33,7 +33,7 @@ The handy thing about decimal is that working in groups of 10 makes for nice eas
 
 Binary, or base 2 is the simple yet beautiful numbering system of computers. Everything from numbers, text, and even images can be represented with these two numbers.
 
-![Binary](/uploads/binary.png)
+![Binary](/uploads/binary.png#center)
 
 > As the saying goes - _there's 10 types of people in the world; those who understand binary, and those who don't._
 
@@ -45,7 +45,7 @@ For example, #FFFFFF, which is the hex code for the color white, is actually com
 
 You may have already realised "hey wait, we use 16 digits for base 16, but there's only 10 numeric digits in the latin alphabet!". Because we need an additional 6 digits, we use the letters `A`, `B`, `C`, `D`, `E`, and `F` to fill the gap.  This is entirely arbitrary however, we could have chosen any 6 letters, or names of fruit, or Simpsons characters, had we chosen to.
 
-![Hexadecimal](/uploads/hex.png)
+![Hexadecimal](/uploads/hex.png#center)
 
 ## The number Ten doesn't exist!
 
