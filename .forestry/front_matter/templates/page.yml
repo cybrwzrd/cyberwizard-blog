@@ -1,0 +1,26 @@
+---
+label: Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: url
+  label: url
+- type: boolean
+  name: disableShare
+  label: disableShare
+- type: boolean
+  name: ShowReadingTime
+  label: ShowReadingTime
+- type: field_group
+  name: cover
+  label: cover
+  fields:
+  - type: file
+    name: image
+    label: image
