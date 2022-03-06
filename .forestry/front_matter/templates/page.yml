@@ -8,15 +8,21 @@ fields:
 - type: datetime
   name: date
   label: date
-- type: text
-  name: url
-  label: url
+  default: now
+  hidden: true
 - type: boolean
   name: disableShare
   label: disableShare
+  hidden: true
+  default: true
 - type: boolean
   name: ShowReadingTime
   label: ShowReadingTime
+  hidden: true
+  default: false
+- type: text
+  name: url
+  label: url
 - type: field_group
   name: cover
   label: cover
@@ -24,3 +30,16 @@ fields:
   - type: file
     name: image
     label: image
+  - name: hidden
+    type: boolean
+    label: Show image
+  - name: alt
+    type: text
+    config:
+      required: false
+    label: Alt text
+  - name: caption
+    type: text
+    config:
+      required: false
+    label: Caption
