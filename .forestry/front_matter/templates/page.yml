@@ -48,7 +48,7 @@ fields:
     type: boolean
     label: Use local image
     description: Enable this if using image uploaded locally
-    hidden: true
+    hidden: false
     default: true
 pages:
 - content/test-page.md
