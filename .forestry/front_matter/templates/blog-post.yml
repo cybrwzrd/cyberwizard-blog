@@ -45,7 +45,7 @@ fields:
     type: boolean
     label: Hide Image
     default: true
-  - name: use_relative_url
+  - name: relative
     type: boolean
     label: Use relative URL
     description: Enable this when hosting images locally
