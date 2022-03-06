@@ -50,3 +50,5 @@ fields:
     description: Enable this if using image uploaded locally
     hidden: false
     default: true
+pages:
+- content/projects.md
