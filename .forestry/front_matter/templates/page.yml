@@ -32,7 +32,8 @@ fields:
     label: image
   - name: hidden
     type: boolean
-    label: Show image
+    label: Disable cover
+    default: false
   - name: alt
     type: text
     config:
@@ -43,5 +44,11 @@ fields:
     config:
       required: false
     label: Caption
+  - name: relative
+    type: boolean
+    label: Use local image
+    description: Enable this if using image uploaded locally
+    hidden: true
+    default: true
 pages:
 - content/test-page.md
