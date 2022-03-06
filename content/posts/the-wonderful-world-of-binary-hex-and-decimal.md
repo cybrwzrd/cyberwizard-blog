@@ -17,7 +17,7 @@ In this post we'll learn about binary, hex, and decimal numbering systems. We'll
 
 > In a positional numeral system, the radix or base is **the number of unique digits, including the digit zero, used to represent numbers**.
 
-Um, thanks Wikipedia. Not the most enlightening is it? Simply put, a "base" is the _base set_ of **digits** that you can use to represent numbers. So, binary is base 2. The only two digits used to represent numbers in binary are 1s and 0s. Easy right? Once you exhaust the base set of digits, you increment the next column and continue.  That is _7, 8, 9, 10._
+Um, thanks Wikipedia. Not the most enlightening is it? Simply put, a "base" is the _unique set_ of **digits** that you can use to represent numbers. So, binary is base 2. The only two digits used to represent numbers in binary are 1s and 0s. Easy right? Once you exhaust the base set of digits, you increment the next column and continue.  That is _7, 8, 9, 10._
 
 ### Decimal (base 10)
 
@@ -27,9 +27,11 @@ Decimal, or base 10, is what you're probably used to dealing with on a daily bas
 
 The handy thing about decimal is that working in groups of 10 makes for nice easy math, as we'll see shortly.
 
+!\[Decimal Conversion\](/uploads/decimal.png)
+
 ### Binary (base 2)
 
-Binary, or base 2 is the simple yet beautiful numbering system of computers. Everything from numbers, text, and even images can be represented with these two numbers.
+Binary, or base 2 is the simple yet beautiful numbering system of computers. Binary, meaning two states. where everything is either a `0` or a `1`. Everything from numbers, text, and even images can be represented with these two numbers.
 
 > As the saying goes - _there's 10 types of people in the world; those who understand binary, and those who don't._
 
@@ -53,35 +55,35 @@ First let's have a look at some representations of numbers in each base, startin
 
 ### Comparison of each base
 
+| Binary | Decimal | Base 16 |
+| --- | --- | --- |
+| 0 | 0 | 0 |
+| 1 | 1 | 1 |
+| 10 | 2 | 2 |
+| 11 | 3 | 3 |
+| 100 | 4 | 4 |
+| 101 | 5 | 5 |
+| 110 | 6 | 6 |
+| 111 | 7 | 7 |
+| 1000 | 8 | 8 |
+| 1001 | 9 | 9 |
+| 1010 | 10 | A |
+| 1011 | 11 | B |
+| 1100 | 12 | C |
+| 1101 | 13 | D |
+| 1110 | 14 | E |
+| 1111 | 15 | F |
+| 10000 | 16 | 10 |
+| 10001 | 17 | 11 |
+| 10010 | 18 | 12 |
+| 10011 | 19 | 13 |
+| 10100 | 20 | 14 |
+| 10101 | 21 | 15 |
+| 11111 | 31 | 1F |
+| 1000101 | 69 | 45 |
+| 11111111 | 255 | FF |
 
-| **Binary** | **Decimal** | **Base 16** |
-|------------|-------------|-------------|
-|          0 |           0 |           0 |
-|          1 |           1 |           1 |
-|         10 |           2 |           2 |
-|         11 |           3 |           3 |
-|        100 |           4 |           4 |
-|        101 |           5 |           5 |
-|        110 |           6 |           6 |
-|        111 |           7 |           7 |
-|       1000 |           8 |           8 |
-|       1001 |           9 |           9 |
-|       1010 |          10 |           A |
-|       1011 |          11 |           B |
-|       1100 |          12 |           C |
-|       1101 |          13 |           D |
-|       1110 |          14 |           E |
-|       1111 |          15 |           F |
-|      10000 |          16 |          10 |
-|      10001 |          17 |          11 |
-|      10010 |          18 |          12 |
-|      10011 |          19 |          13 |
-|      10100 |          20 |          14 |
-|      10101 |          21 |          15 |
-| 11111      | 31          | 1F          |
-| 1000101    | 69          | 45          |
-| 11111111   | 255         | FF          |
-
+As you can see in the table, binary numbers start getting quite large and unwieldy quite quickly, hence why hex is used commonly as a more concise representation. In fact
 
 ### What base am I looking at?
 
