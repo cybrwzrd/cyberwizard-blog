@@ -1,4 +1,4 @@
-baseURL = "https://cyberwizard.io"
+baseURL = "https://cyberwizard.netlify.app"
 buildDrafts = false
 buildExpired = false
 buildFuture = false
