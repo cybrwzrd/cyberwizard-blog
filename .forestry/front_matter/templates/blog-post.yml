@@ -1,4 +1,24 @@
 ---
 label: Blog Post
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: date
+  type: datetime
+  label: Date created
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: showCodeCopyButtons
+  type: boolean
+  label: Display code copy buttons?
+- name: showShareButtons
+  type: boolean
+  label: Show share buttons?
