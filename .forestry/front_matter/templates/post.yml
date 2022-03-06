@@ -2,37 +2,38 @@
 label: Post
 hide_body: false
 fields:
+- type: text
+  name: title
+  label: title
 - type: datetime
   name: date
   label: date
+  hidden: true
+  default: now
 - type: boolean
   name: disableShare
   label: disableShare
+- type: boolean
+  name: ShowReadingTime
+  label: ShowReadingTime
+  default: true
 - type: field_group
   name: cover
   label: cover
   fields:
   - type: boolean
-    name: relative
-    label: relative
+    name: hidden
+    label: hidden
+    default: true
   - type: file
     name: image
     label: image
-  - type: boolean
-    name: hidden
-    label: hidden
-  - type: text
-    name: alt
-    label: alt
   - type: text
     name: caption
     label: caption
-- type: text
-  name: title
-  label: title
-- type: boolean
-  name: ShowReadingTime
-  label: ShowReadingTime
-- type: text
-  name: url
-  label: url
+  - type: text
+    name: alt
+    label: alt
+  - type: boolean
+    name: relative
+    label: relative
