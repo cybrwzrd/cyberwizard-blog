@@ -2,7 +2,6 @@
 ShowReadingTime = false
 date = 2022-03-06T06:08:02Z
 disableShare = true
-draft = true
 title = "Projects"
 url = "projects"
 [cover]
@@ -13,3 +12,4 @@ image = "/uploads/bin2.jpg"
 relative = true
 
 +++
+Coming soon!!
