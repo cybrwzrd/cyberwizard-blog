@@ -1,0 +1,134 @@
+baseURL = "https://examplesite.com/"
+buildDrafts = false
+buildExpired = false
+buildFuture = false
+enableRobotsTXT = true
+googleAnalytics = "UA-123-45"
+paginate = 5
+theme = "PaperMod"
+title = "Cyberwizard"
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+DateFormat = "January 2, 2006"
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowPostNavLinks = true
+ShowReadingTime = true
+ShowShareButtons = true
+author = "Matt Chapman"
+comments = false
+defaultTheme = "dark"
+description = "Cyberwizard description"
+disableScrollToTop = false
+disableSpecial1stPost = false
+disableThemeToggle = true
+env = "production"
+hideSummary = false
+hidemeta = false
+images = ["<link or path of image for opengraph, twitter-cards>"]
+keywords = ["Blog", "Portfolio", "PaperMod"]
+showtoc = false
+title = "Cyberwizard"
+tocopen = false
+
+[params.assets]
+apple_touch_icon = "/apple-touch-icon.png"
+favicon = "/favicon.ico"
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon-32x32.png"
+safari_pinned_tab = "/apple-touch-icon.png"
+
+[params.label]
+icon = "/logo-mono.png"
+iconHeight = 35
+text = "Cyberwizard"
+
+[params.profileMode]
+enabled = true
+subtitle = "Delving into the magic and mystery of the neon web."
+title = "Matt Chapman"
+# imageUrl = "<img location>"
+imageHeight = 240
+imageTitle = "Profile image"
+imageUrl = "/profile.jpg"
+imageWidth = 240
+
+[[params.profileMode.buttons]]
+name = "Latest Posts"
+url = "posts"
+
+# [[params.profileMode.buttons]]
+# name = "Projects" # TODO
+# url = "tags"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/mttchpmn"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/mttchpmn"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:matt@mattchapman.io"
+
+[[params.socialIcons]]
+name = "phone"
+url = "callto:+64276282427"
+
+# [params.analytics.google]
+# SiteVerificationTag = "XYZabc"
+
+# [params.analytics.bing]
+# SiteVerificationTag = "XYZabc"
+
+# [params.analytics.yandex]
+# SiteVerificationTag = "XYZabc"
+
+[params.cover]
+hidden = true
+hiddenInList = true
+hiddenInSingle = true
+
+# [params.editPost]
+# URL = "https://github.com/<path_to_repo>/content"
+# Text = "Suggest Changes"
+# appendFilePath = true
+
+[params.fuseOpts]
+distance = 1_000
+isCaseSensitive = false
+keys = ["title", "permalink", "summary", "content"]
+location = 0
+minMatchCharLength = 0
+shouldSort = true
+threshold = 0.4
+
+[[menu.main]]
+identifier = "about" 
+name = "About" 
+url = "/" # TODO
+weight = 10 
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts/"
+weight = 20
+
+# [[menu.main]]
+# identifier = "projects" # TODO
+# name = "Projects"
+# url = "/"
+# weight = 20
+
+# [[menu.main]]
+# identifier = "example"
+# name = "example.org"
+# url = "https://example.org"
+# weight = 30
