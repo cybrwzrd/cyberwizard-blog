@@ -6,7 +6,7 @@ title = "The Wonderful World of Binary, Hex, and Decimal"
 [cover]
 alt = "Binary digits"
 caption = "Don't you just love binary?"
-hidden = true
+hidden = false
 image = "/uploads/bin2.jpg"
 relative = true
 
