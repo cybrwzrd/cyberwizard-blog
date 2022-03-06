@@ -53,7 +53,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: caption
   label: Cover image
 pages:
 - content/posts/binary-hex-and-decimal.what-s-the-deal.md
