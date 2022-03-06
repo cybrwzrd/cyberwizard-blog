@@ -17,10 +17,10 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: showCodeCopyButtons
+- name: ShowCodeCopyButtons
   type: boolean
   label: Display code copy buttons?
-- name: showShareButtons
+- name: ShowShareButtons
   type: boolean
   label: Show share buttons?
 pages:
