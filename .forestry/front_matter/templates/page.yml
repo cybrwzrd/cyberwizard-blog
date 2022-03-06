@@ -43,3 +43,5 @@ fields:
     config:
       required: false
     label: Caption
+pages:
+- content/test-page.md
