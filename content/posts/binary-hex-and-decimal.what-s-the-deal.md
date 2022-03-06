@@ -10,6 +10,7 @@ alt = "Image of binary digits"
 caption = "Don't you just love binary?"
 hidden = false
 image = "/uploads/bin2.jpg"
+relative = true
 use_relative_url = true
 
 +++
