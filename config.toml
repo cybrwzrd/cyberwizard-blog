@@ -1,4 +1,4 @@
-baseURL = "https://examplesite.com/"
+baseURL = "https://cyberwizard.io"
 buildDrafts = false
 buildExpired = false
 buildFuture = false
@@ -54,7 +54,7 @@ title = "Matt Chapman"
 # imageUrl = "<img location>"
 imageHeight = 240
 imageTitle = "Profile image"
-imageUrl = "/profile.jpg"
+imageUrl = "profile.jpg"
 imageWidth = 240
 
 [[params.profileMode.buttons]]
