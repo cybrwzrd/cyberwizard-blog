@@ -37,3 +37,5 @@ fields:
   - type: boolean
     name: relative
     label: relative
+pages:
+- content/posts/the-wonderful-world-of-binary-hex-and-decimal.md
