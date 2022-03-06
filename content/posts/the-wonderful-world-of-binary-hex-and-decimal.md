@@ -27,7 +27,7 @@ Decimal, or base 10, is what you're probably used to dealing with on a daily bas
 
 The handy thing about decimal is that working in groups of 10 makes for nice easy math, as we'll see shortly.
 
-!\[Decimal Conversion\](/uploads/decimal.png)
+![Decimal Conversion](uploads/decimal.png)
 
 ### Binary (base 2)
 
