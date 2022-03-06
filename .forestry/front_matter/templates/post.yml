@@ -38,4 +38,5 @@ fields:
     name: relative
     label: relative
 pages:
+- content/posts/my-cool-new-post.md
 - content/posts/the-wonderful-world-of-binary-hex-and-decimal.md
