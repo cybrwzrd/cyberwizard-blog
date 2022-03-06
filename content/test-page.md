@@ -9,5 +9,6 @@ alt = "fsdfsdff"
 caption = "I love binary"
 hidden = false
 image = "/uploads/bin2.jpg"
+relative = true
 
 +++
