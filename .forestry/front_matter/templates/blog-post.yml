@@ -22,3 +22,5 @@ fields:
 - name: showShareButtons
   type: boolean
   label: Show share buttons?
+pages:
+- content/posts/binary-hex-and-decimal.what-s-the-deal.md
