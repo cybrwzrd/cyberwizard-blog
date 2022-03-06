@@ -7,7 +7,7 @@ url = "foo"
 [cover]
 alt = "fsdfsdff"
 caption = "I love binary"
-hidden = true
+hidden = false
 image = "/uploads/bin2.jpg"
 
 +++
