@@ -19,6 +19,8 @@ In this post we'll learn about binary, hex, and decimal numbering systems. We'll
 
 Um, thanks Wikipedia. Not the most enlightening is it? Simply put, a "base" is the _base set_ of **digits** that you can use to represent numbers. So, binary is base 2. The only two digits used to represent numbers in binary are 1s and 0s. Easy right? Once you exhaust the base set of digits, you increment the next column and continue.  That is _7, 8, 9, 10._
 
+![Bases](/uploads/bases.png#center)
+
 ### Decimal (base 10)
 
 Decimal, or base 10, is what you're probably used to dealing with on a daily basis. There are 10 digits used to represent decimal numbers:
