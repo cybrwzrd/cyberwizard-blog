@@ -95,6 +95,14 @@ When converting between bases, it's generally easier to first convert to decimal
 
 ### Converting to decimal
 
+Regardless of which base you are converting from, the steps are very much the same.
+
+* Annotate each column with the _base_ to the power of the _column index_ (which starts at zero and moves from right to left)
+* Convert each single digit to its decimal representation i.e `0xF` becomes `15`
+* Compute the value of each column's _base_ to the power of its _exponent_z
+* Multiply the column value by the result from the previous step
+* Add each column value together to get the final result
+
 #### From Hex
 
 ![Hex Conversion](/uploads/hex-conversion.png)
