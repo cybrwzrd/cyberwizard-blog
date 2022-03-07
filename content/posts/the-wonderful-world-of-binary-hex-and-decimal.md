@@ -71,7 +71,7 @@ First let's have a look at some representations of numbers in each base, startin
 
 ### Comparison of bases
 
-![Base comparison](/uploads/comparison.png)
+![Base comparison](/uploads/comparison.png#center)
 
 As you can see in the table, binary numbers start getting quite large and unwieldy quite quickly, hence why hex is used commonly as a more concise representation. In fact
 
