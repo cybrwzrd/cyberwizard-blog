@@ -17,9 +17,27 @@ In this post we'll learn about binary, hex, and decimal numbering systems. We'll
 
 > In a positional numeral system, the radix or base is **the number of unique digits, including the digit zero, used to represent numbers**.
 
-Um, thanks Wikipedia. Not the most enlightening is it? Simply put, a "base" is the _base set_ of **digits** that you can use to represent numbers. So, binary is base 2. The only two digits used to represent numbers in binary are 1s and 0s. Easy right? Once you exhaust the base set of digits, you increment the next column and continue.  That is _7, 8, 9, 10._
+Um, thanks Wikipedia. Not the most enlightening is it? Simply put, a "base" is the _base set_ of **digits** that you can use to represent numbers. So, binary is base `2`. The only two digits used to represent numbers in binary are `1` and `0` (there's _two_ of them). Decimal is base `10` - the digits `0` through `9` make a total of 10 unique digits. Easy right? 
 
-![Bases](/uploads/bases.png#center)
+![Bases](/uploads/bases.png#center "Bases")
+
+In the above image, the number increments from right to left.  For now, let's assume this is a decimal number.  Once any given column reaches the highest unique value (so in decimal this would be `9`), that column becomes zero, and the column to its left is incremented by one. This applies regardless of which base you are using.
+
+> `9` becomes `10`; `29` becomes `30`; `999` becomes `1000`;  you get the idea.
+
+Where the "base" part comes in is the little pink squares under each column.  The true value of any given column is the column's value multiplied by the _base_ to the power of the column index (which starts at zero). That sounds complex, but in practice it's quite simple.
+
+If we assume the number in the above image is _decimal_, then the `x` value (in the pink squares) represents the number `10`. So reading from left to right, the first column has the value of `1 x (10 ^4)`, which is equal to `10,000`; the next column has the value of `1 x (10 ^ 3)`, which is `1000`.  The remaining column values are all zero, so the total value is `11,000`. Regardless of what base you are using (decimal, binary, hex etc), the principle remains the same; the only difference is which number you substitute in for the base value.
+
+## The number Ten doesn't exist!
+
+Wait, what? Yeah that's right. The number "ten" doesn't actually exist.  "Ten" (as well as eleven, twelve etc) is really just a convenient way to describe the number `one zero`.  As soon as you grasp this, understanding how different bases represent numbers becomes much easier.
+
+If you're still confused, fear not reader! We'll go over this more in the next few sections.
+
+***
+
+## The different bases
 
 ### Decimal (base 10)
 
@@ -29,11 +47,9 @@ Decimal, or base 10, is what you're probably used to dealing with on a daily bas
 
 ![Decimal](/uploads/decimal.png#center)
 
-The handy thing about decimal is that working in groups of 10 makes for nice easy math, as we'll see shortly.
-
 ### Binary (base 2)
 
-Binary, or base 2 is the simple yet beautiful numbering system of computers. Everything from numbers, text, and even images can be represented with these two numbers.
+Binary, or base 2 is the simple yet beautiful numbering system of computers. `1`s and `0`s, that's all there is to it. Everything from numbers, text, and even images can be represented with these two numbers.
 
 ![Binary](/uploads/binary.png#center)
 
@@ -41,53 +57,21 @@ Binary, or base 2 is the simple yet beautiful numbering system of computers. Eve
 
 ### Hexadecimal (base 16)
 
-While it may sound quite intimidating, hexadecimal (or base 16), is actually more commonplace than you may realise.  While often used to condense binary numbers into a more concise representation, hexadecimal (or hex for short) is used for color codes in web design - hence _hex_ codes.
+Hexadecimal, or base 16, uses `sixteen` unique digits. You may have already realised "hey wait, we use 16 digits for base 16, but there's only 10 numeric digits in the Latin alphabet!". Because we need an additional 6 digits, we use the letters `A`, `B`, `C`, `D`, `E`, and `F` to fill the gap.  This is entirely arbitrary however, we could have chosen any 6 letters, or names of fruit, or Simpsons characters, had we chosen to.
 
-For example, #FFFFFF, which is the hex code for the color white, is actually comprised of 3 groups of hexadecimal numbers: `FF`, `FF`, and `FF`. These 3 groups represent the color values for the red, green, and blue color channels. As we'll see shortly, `FF` in hex equates to `255` in decimal.  We can see then that hex codes can be viewed as a more concise way of representing `rgb(255, 255, 255)`. Isn't that neat!
+While it may sound quite intimidating, hex, is actually more commonplace than you may realise.  While often used to condense binary numbers into a more concise representation (among other things), hexadecimal (or hex for short) is also used for color codes in web design - hence _hex_ codes.
 
-You may have already realised "hey wait, we use 16 digits for base 16, but there's only 10 numeric digits in the latin alphabet!". Because we need an additional 6 digits, we use the letters `A`, `B`, `C`, `D`, `E`, and `F` to fill the gap.  This is entirely arbitrary however, we could have chosen any 6 letters, or names of fruit, or Simpsons characters, had we chosen to.
+For example, `#F335B2`, which is the hex code for the hot pink color you can see in the diagrams, is actually comprised of 3 groups of hexadecimal numbers: `F3`, `35`, and `B2`. These 3 groups represent the color values for the red, green, and blue color channels. `F3`, `35`, and `B2` equate to `243`, `53`, and `178` in decimal.  We can see then that hex codes can be viewed as a more concise way of representing `rgb(243, 53, 178)`. Isn't that neat!
 
 ![Hexadecimal](/uploads/hex.png#center)
-
-## The number Ten doesn't exist!
-
-Wait, what? Yeah that's right. The number "ten" doesn't actually exist.  "Ten" (as well as eleven, twelve etc) is really just a convenient way to describe the number `one zero`.  As soon as you grasp this, understanding how different bases represent numbers becomes much easier.
-
-If you're still confused, fear not reader! We'll go over this more in the next few sections.
 
 ## Understanding how each base represents numbers
 
 First let's have a look at some representations of numbers in each base, starting with zero through twenty, and throwing an assortment of larger numbers in for good measure.
 
-### Comparison of each base
+### Comparison of bases
 
-| Binary | Decimal | Base 16 |
-| --- | --- | --- |
-| 0 | 0 | 0 |
-| 1 | 1 | 1 |
-| 10 | 2 | 2 |
-| 11 | 3 | 3 |
-| 100 | 4 | 4 |
-| 101 | 5 | 5 |
-| 110 | 6 | 6 |
-| 111 | 7 | 7 |
-| 1000 | 8 | 8 |
-| 1001 | 9 | 9 |
-| 1010 | 10 | A |
-| 1011 | 11 | B |
-| 1100 | 12 | C |
-| 1101 | 13 | D |
-| 1110 | 14 | E |
-| 1111 | 15 | F |
-| 10000 | 16 | 10 |
-| 10001 | 17 | 11 |
-| 10010 | 18 | 12 |
-| 10011 | 19 | 13 |
-| 10100 | 20 | 14 |
-| 10101 | 21 | 15 |
-| 11111 | 31 | 1F |
-| 1000101 | 69 | 45 |
-| 11111111 | 255 | FF |
+![Base comparison](/uploads/comparison.png)
 
 As you can see in the table, binary numbers start getting quite large and unwieldy quite quickly, hence why hex is used commonly as a more concise representation. In fact
 
