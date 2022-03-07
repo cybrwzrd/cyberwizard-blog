@@ -21,9 +21,7 @@ Um, thanks Wikipedia. Not the most enlightening is it? Simply put, a "base" is t
 
 ![Incrementing Bases](/uploads/incrementing-bases.png#center)
 
-In the above image, the number increments from right to left.  For now, let's assume this is a decimal number.  Once any given column reaches the highest unique value (so in decimal this would be `9`), that column becomes zero, and the column to its left is incremented by one. This applies regardless of which base you are using.
-
-> `9` becomes `10`; `29` becomes `30`; `999` becomes `1000`;  you get the idea.
+The above image shows how we would count from `998` to `1000` in base 10. Once any given column reaches the highest unique value (so in decimal this would be `9`), that column becomes zero, and the column to its left is incremented by one (if that column is also the highest digit value, then the next column to the left is incremented). This applies regardless of which base you are using.
 
 Where the "base" part comes in is the little pink squares under each column.  The true value of any given column is the column's value multiplied by the _base_ to the power of the column index (which starts at zero). That sounds complex, but in practice it's quite simple.
 
