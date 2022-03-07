@@ -99,7 +99,7 @@ Regardless of which base you are converting from, the steps are very much the sa
 
 * Annotate each column with the _base_ to the power of the _column index_ (which starts at zero and moves from right to left)
 * Convert each single digit to its decimal representation i.e `0xF` becomes `15`
-* Compute the value of each column's _base_ to the power of its _exponent_z
+* Compute the value of each column's _base_ to the power of its _exponent_s
 * Multiply the column value by the result from the previous step
 * Add each column value together to get the final result
 
