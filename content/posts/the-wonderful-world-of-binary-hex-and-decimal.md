@@ -63,8 +63,6 @@ While it may sound quite intimidating, hex, is actually more commonplace than yo
 
 For example, `#F335B2`, which is the hex code for the hot pink color you can see in the diagrams, is actually comprised of 3 groups of hexadecimal numbers: `F3`, `35`, and `B2`. These 3 groups represent the color values for the red, green, and blue color channels. `F3`, `35`, and `B2` equate to `243`, `53`, and `178` in decimal.  We can see then that hex codes can be viewed as a more concise way of representing `rgb(243, 53, 178)`. Isn't that neat!
 
-![Hexadecimal](/uploads/hex.png#center)
-
 ## Understanding how each base represents numbers
 
 First let's have a look at some representations of numbers in each base, starting with zero through twenty, and throwing an assortment of larger numbers in for good measure.
