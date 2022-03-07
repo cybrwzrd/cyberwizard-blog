@@ -17,7 +17,7 @@ In this post we'll learn about binary, hex, and decimal numbering systems. We'll
 
 > In a positional numeral system, the radix or base is **the number of unique digits, including the digit zero, used to represent numbers**.
 
-Um, thanks Wikipedia. Not the most enlightening is it? Simply put, a "base" is the _base set_ of **digits** that you can use to represent numbers. So, binary is base `2`. The only two digits used to represent numbers in binary are `1` and `0` (there's _two_ of them). Decimal is base `10` - the digits `0` through `9` make a total of 10 unique digits. Easy right? 
+Um, thanks Wikipedia. Not the most enlightening is it? Simply put, a "base" is the _base set_ of **digits** that you can use to represent numbers. So, binary is base `2`. The only two digits used to represent numbers in binary are `1` and `0` (there's _two_ of them). Decimal is base `10` - the digits `0` through `9` make a total of 10 unique digits. Easy right?
 
 ![Bases](/uploads/bases.png#center "Bases")
 
@@ -71,12 +71,30 @@ First let's have a look at some representations of numbers in each base, startin
 
 ### Comparison of bases
 
+In the below table, the colored numbers represent the `unique set` of digits that each base is comprised of.
+
 ![Base comparison](/uploads/comparison.png#center)
 
-As you can see in the table, binary numbers start getting quite large and unwieldy quite quickly, hence why hex is used commonly as a more concise representation. In fact
+We can see above that `7` in hex equals `7` in decimal, but `111` in binary.  Additionally we can see that `D` in hex equals `13` in decimal, and `1101` in binary.
+
+You may have noticed binary numbers start getting quite large and unwieldy quite quickly, hence why hex is used commonly as a more concise representation. 
 
 ### What base am I looking at?
 
+You may have noticed that if the number's base isn't explicitly stated, it could be easy to interpret a given number using numerous bases.
+
+For example the number `1101` could be _one thousand, one hundred and one_ if the base is decimal, but equally it could be _seven_ if the base is binary.
+
+For this reason, it's important to denote which base a given number is in. Lucky for you, there is already a standard convention.
+
+* Hexadecimal numbers are represented with a `0x` prefix in front of the number. e.g `0xAF8`
+* Binary numbers are represented with a `0b` prefix in front of the number. e.g. `0b1101`
+* Decimal numbers are represented without any prefix. So if you can't see a prefix, you can assume the number is decimal.
+
 ## Converting between bases
+
+### Converting to decimal
+
+### Converting to other bases
 
 ## Wrap Up
