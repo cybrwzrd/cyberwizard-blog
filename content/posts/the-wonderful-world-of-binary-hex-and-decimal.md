@@ -19,7 +19,7 @@ In this post we'll learn about binary, hex, and decimal numbering systems. We'll
 
 Um, thanks Wikipedia. Not the most enlightening is it? Simply put, a "base" is the _base set_ of **digits** that you can use to represent numbers. So, binary is base `2`. The only two digits used to represent numbers in binary are `1` and `0` (there's _two_ of them). Decimal is base `10` - the digits `0` through `9` make a total of 10 unique digits. Easy right?
 
-![Bases](/uploads/bases.png#center "Bases")
+![Incrementing Bases](/uploads/incrementing-bases.png)
 
 In the above image, the number increments from right to left.  For now, let's assume this is a decimal number.  Once any given column reaches the highest unique value (so in decimal this would be `9`), that column becomes zero, and the column to its left is incremented by one. This applies regardless of which base you are using.
 
@@ -77,7 +77,7 @@ In the below table, the colored numbers represent the `unique set` of digits tha
 
 We can see above that `7` in hex equals `7` in decimal, but `111` in binary.  Additionally we can see that `D` in hex equals `13` in decimal, and `1101` in binary.
 
-You may have noticed binary numbers start getting quite large and unwieldy quite quickly, hence why hex is used commonly as a more concise representation. 
+You may have noticed binary numbers start getting quite large and unwieldy quite quickly, hence why hex is used commonly as a more concise representation.
 
 ### What base am I looking at?
 
