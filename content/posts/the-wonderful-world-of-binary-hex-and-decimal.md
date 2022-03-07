@@ -41,21 +41,23 @@ If you're still confused, fear not reader! We'll go over this more in the next f
 
 Decimal, or base 10, is what you're probably used to dealing with on a daily basis. There are 10 digits used to represent decimal numbers:
 
-> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-
-![Decimal](/uploads/decimal.png#center)
+> `0, 1, 2, 3, 4, 5, 6, 7, 8, 9`
 
 ### Binary (base 2)
 
-Binary, or base 2 is the simple yet beautiful numbering system of computers. `1`s and `0`s, that's all there is to it. Everything from numbers, text, and even images can be represented with these two numbers.
+Binary, or base 2 is the simple yet beautiful numbering system of computers.Everything from numbers, text, and even images can be represented with these two numbers.
 
-![Binary](/uploads/binary.png#center)
+Binary has just two unique digits in its number set.
 
-> As the saying goes - _there's 10 types of people in the world; those who understand binary, and those who don't._
+> `0, 1`
+
+As the saying goes - _there's 10 types of people in the world; those who understand binary, and those who don't._
 
 ### Hexadecimal (base 16)
 
 Hexadecimal, or base 16, uses `sixteen` unique digits. You may have already realised "hey wait, we use 16 digits for base 16, but there's only 10 numeric digits in the Latin alphabet!". Because we need an additional 6 digits, we use the letters `A`, `B`, `C`, `D`, `E`, and `F` to fill the gap.  This is entirely arbitrary however, we could have chosen any 6 letters, or names of fruit, or Simpsons characters, had we chosen to.
+
+> `1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F`
 
 While it may sound quite intimidating, hex, is actually more commonplace than you may realise.  While often used to condense binary numbers into a more concise representation (among other things), hexadecimal (or hex for short) is also used for color codes in web design - hence _hex_ codes.
 
@@ -91,7 +93,17 @@ For this reason, it's important to denote which base a given number is in. Lucky
 
 ## Converting between bases
 
+When converting between bases, it's generally easier to first convert to decimal as an intermediary step, and then to convert to the desired base after that.
+
 ### Converting to decimal
+
+#### From Hex
+
+![Hex Conversion](/uploads/hex-conversion.png)
+
+#### From Binary
+
+![Binary Conversion](/uploads/binary-conversion.png)
 
 ### Converting to other bases
 
