@@ -5,7 +5,7 @@ url: "/about/"
 disableShare: true
 ShowReadingTime: false
 cover:
-  image: "/bio.jpg"
+  image: "/uploads/bio.jpg"
 
 ---
 ## Kia ora!
