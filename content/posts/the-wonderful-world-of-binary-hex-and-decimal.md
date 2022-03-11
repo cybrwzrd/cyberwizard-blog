@@ -11,7 +11,7 @@ image = "/uploads/bin2.jpg"
 relative = true
 
 +++
-In this post we'll learn about binary, hex, and decimal numbering systems. We'll learn what a 'base' is, as well as how to convert between different bases. We'll also look at why these different number systems are so useful, and some of their most common use cases.
+In this post we'll learn about binary, hex, and decimal numbering systems. We'll learn what a 'base' is, as well as how to convert these bases to decimal. We'll also look at why these different number systems are so useful, and some of their most common use cases.
 
 ## What's in a base?
 
@@ -89,11 +89,7 @@ For this reason, it's important to denote which base a given number is in. Lucky
 * Binary numbers are represented with a `0b` prefix in front of the number. e.g. `0b1101`
 * Decimal numbers are represented without any prefix. So if you can't see a prefix, you can assume the number is decimal.
 
-## Converting between bases
-
-When converting between bases, it's generally easier to first convert to decimal as an intermediary step, and then to convert to the desired base after that.
-
-### Converting to decimal
+## Converting to decimal
 
 Regardless of which base you are converting from, the steps are very much the same.
 
@@ -107,10 +103,34 @@ Regardless of which base you are converting from, the steps are very much the sa
 
 ![Hex Conversion](/uploads/hex-conversion.png)
 
+Starting with the hexadecimal number `0xF1AD7`:
+
+* Annotate each column with the `base` to the power of the column index (Starting with `0` at the right hand side). So the column containing the `F` digit gets annotated with the value `16^4`
+* Replace each hexadecimal digit with its decimal equivalent. So `F` becomes `15`, `D` becomes 13 etc.
+* For each column, compute the result of the `base` to the power of the column index.
+* For each column, multiply the above result by the column value
+* Sum the totals together
+
+Thus, we can see that `0xF1AD7` in hex is `989,911` in decimal
+
 #### From Binary
 
 ![Binary Conversion](/uploads/binary-conversion.png)
 
+The steps for converting from binary to decimal are no different to the steps described above; in fact, they are even easier. As the value of each column can only ever be a one or a zero, all you need to do is compute the value of the `base` to the power of the column index for each column, and then sum those results where the column value is not zero.
+
 ### Converting to other bases
 
+Just using the information described above, you can reverse this process to convert a decimal number to binary or hexadecimal.  However, this is somewhat tedious to do manually.  I'll leave it as an exercise to you dear reader, to go forth and discover how to convert decimal numbers to these others using a programmatic formula!
+
 ## Wrap Up
+
+I sincerely hope you've enjoyed this brief foray into the wonderful world of binary and hex, and perhaps now share some of my fascination with the subject. In this blog post., we covered:
+
+* What bases are
+* How to interpret different bases
+* How binary numbers are represented, and some of their use cases
+* How hexadecimal numbers are represented, and some of their use cases
+* How to read and convert binary and hex numbers to decimal
+
+Thanks for reading!!
