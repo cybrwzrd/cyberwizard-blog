@@ -17,6 +17,8 @@ What I believe to be the 'ultimate' setup actually uses IdeaVim ( the Vim emulat
 
 ## Why IdeaVim
 
+***
+
 Look, don't get me wrong, I _love_ using Vim in the terminal. I've gone down the pure Vim route, the fully tweaked NeoVim route, and everything in between. While terminal Vim is pure, fast, and -let's face it- great for looking like a hipster in front of your colleagues, it's just not sufficient for day-to-day professional software development work.
 
 I've tried, believe me I've tried, to leave the warm confines of my IDE for the neon beauty of the terminal, but I cannot abandon my debugger, test runner, and JetBrain's unbelievably good suite of refactorings.
@@ -27,11 +29,17 @@ _Disclaimer: I code primarily in C# in my professional capacity.  If you're codi
 
 ## The config
 
+***
+
 In each of the below sections, we'll take an in-depth look at each part of the IdeaVim config, explaining what the configuration does, and why we might desire it.  At the end of the post, you can find the full `.ideavimrc` file in its entirety, ripe for copy-pasting.
 
 ### Basic configuration
 
+***
+
 In this section, we'll look at some of the baseline tweaks and settings to give us a nice starting point for editor behaviour.
+
+#### General settings
 
 ```vimrc
 set scrolloff=10
@@ -52,6 +60,8 @@ set clipboard+=unnamed
 
 `clipboard+=unnamed` ensures that IdeaVim shares its clipboard with the system clipboard.
 
+#### Search improvements
+
 ```vimrc
 set ignorecase
 set smartcase
@@ -67,6 +77,8 @@ set hlsearch
 
 `hlsearch` ensures all of the search results are highlighted.
 
+#### Leader key assignment
+
 ```vimrc
 let mapleader = " "
 ```
@@ -79,9 +91,27 @@ The reason we define the leader key now rather than later, is certain plugins de
 
 ### Third party plugins
 
+***
+
+#### Surround
+
+#### Highlighted Yank
+
+#### Sneak
+
+#### NerdTree
+
+#### EasyMotion
+
+#### Which-Key
+
 ### Key mappings
 
+***
+
 ### Leader commands
+
+***
 
 ## TL;DR
 
