@@ -23,6 +23,8 @@ In this post, I'll show you how to configure your workflow like mine, so that yo
 
 ## The config
 
+In each of the below sections, we'll take an in-depth look at each part of the IdeaVim config, explaining what the configuration does, and why we might desire it.  At the end of the post, you can find the full `.ideavimrc` file in its entirety, ripe for copy-pasting.
+
 ### Basic configuration
 
 In this section, we'll look at some of the baseline tweaks and settings to give us a nice starting point for editor behaviour.
@@ -32,6 +34,8 @@ set scrolloff=10
 set linenumber
 set showmode
 set showcmd
+set visualbell
+set clipboard+=unnamed
 ```
 `scrolloff` defines the number of lines to leave on the screen before scrolling. That is, if the value is set to `10`, when moving the cursor down the page, once only 10 lines remain, the page will start to scroll.
 
@@ -39,13 +43,34 @@ set showcmd
 
 `showmode` and `showcmd` simply ensure that the Vim mode (normal, insert etc) and any commands you execute are displayed at the bottom of the screen.
 
+`visualbell` causes the annoying audible bell sound to stop being emitted whenever you enter an invalid input.
+
+`clipboard+=unnamed` ensures that IdeaVim shares its clipboard with the system clipboard.
+
 ```vimrc
+set ignorecase
 set smartcase
 set incsearch
 set hlsearch
 ```
 
-These 3 lines all relate to Vim's searching functionality
+`ignorecase` tells Vim to use case-insensitive search by default.
+
+`smartcase` tells Vim that if _any_ of the search characters are uppercase, treat the search as case-sensitive. 
+
+`setincsearch` tells Vim to start searching as you type, rather than waiting for you to submit the complete search string first.
+
+`hlsearch` ensures all of the search results are highlighted.
+
+```vimrc
+let mapleader = " "
+```
+
+The `mapleader` command defines which key we want to use as our `leader` key. This is a unique prefix key that we can use to define a bunch of custom commands a little bit later.
+
+The spacebar is actually a great candidate for our leader key as it is not used by any existing commands, has no use in Vim's normal mode, and is accessible by both hands.
+
+The reason we define the leader key now rather than later, is certain plugins depend on the leader key being defined prior to the plugins being configured.
 
 ### Third party plugins
 
@@ -54,3 +79,7 @@ These 3 lines all relate to Vim's searching functionality
 ### Leader commands
 
 ## TL;DR
+
+---
+
+## The entire .ideavimrc
