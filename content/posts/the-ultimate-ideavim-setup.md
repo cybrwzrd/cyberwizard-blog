@@ -2,6 +2,7 @@
 ShowCodeCopyButtons = true
 ShowReadingTime = true
 date = 2022-03-12T00:24:05Z
+description = "Building the best balance of efficiency and responsiveness using JetBrains IdeaVim."
 disableShare = false
 title = "The ultimate IdeaVim setup"
 [cover]
