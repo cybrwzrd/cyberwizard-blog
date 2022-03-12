@@ -345,7 +345,7 @@ Map code navigation actions to keyboard shortcuts, and nest them under the `<lea
 map <leader>gc <Action>(CheckinProject)
 map <leader>gs <Action>(ActivateVersionControlToolWindow)
 map <leader>gb <Action>(Git.Branches)
-```x
+```
 
 
 Map git actions to keyboard shortcuts, and nest them under the `<leader>g` group.
