@@ -2,7 +2,7 @@
 ShowReadingTime = true
 date = 2022-03-06T06:11:33Z
 disableShare = false
-title = "The Wonderful World of Binary, Hex, and Decimal"
+title = "The Wonderful World of Binary & Hex"
 [cover]
 alt = "Binary digits"
 caption = "Don't you just love binary?"
