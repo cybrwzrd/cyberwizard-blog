@@ -184,6 +184,52 @@ The identifier can be anything you like, it doesn't get displayed anywhere. You'
 
 ***
 
+I actually keep my custom keymaps pretty lean; I prefer use to leader commands instead. Additionally, it can be tricky to find custom keymaps that don't clash with Vim's existing maps. Vim's default behaviour is pretty darn good, so I do advocating using the defaults where possible.
+
+```vimrc
+inoremap jk <Esc>
+```
+
+This one's a must have. Map the `jk` sequence to send an `escape` character. Some people like `jj` instead, but I find `jk` slightly faster.
+
+```vimrc
+" Tab navigation
+nnoremap <A-n> :tabnext<CR>
+nnoremap <A-p> :tabprev<CR>\
+```
+
+```vimrc
+" Pane navigation
+nnoremap <A-h> <C-w>h
+nnoremap <A-l> <C-w>l
+nnoremap <A-k> <C-w>k
+nnoremap <A-j> <C-w>j
+```
+
+```vimrc
+" Jump between methods
+nnoremap [[ <Action>(MethodUp)
+nnoremap ]] <Action>(MethodDown)
+```
+
+```vimrc
+" Easy visual indentation
+vnoremap < <gv
+vnoremap > >gv
+```
+
+```vimrc
+" Easy visual indentation
+vnoremap < <gv
+vnoremap > >gv
+```
+
+```vimrc
+" Popup navigation
+inoremap <C-j> <Action>(PopupMenu-selectNext)
+inoremap <C-k> <Action>(PopupMenu-selectPrev)
+```
+
 ### Leader commands
 
 ***
