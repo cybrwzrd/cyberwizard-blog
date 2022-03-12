@@ -37,6 +37,10 @@ fields:
   - type: boolean
     name: relative
     label: relative
+- name: ShowCodeCopyButtons
+  type: boolean
+  label: Show code copy buttons
+  default: true
 pages:
 - content/posts/the-ultimate-ideavim-setup.md
 - content/posts/the-wonderful-world-of-binary-hex-and-decimal.md
