@@ -1,4 +1,4 @@
-baseURL = "https://cyberwizard.netlify.app"
+baseURL = "https://www.cyberwizard.io"
 buildDrafts = false
 buildExpired = false
 buildFuture = false
@@ -43,7 +43,7 @@ favicon32x32 = "/favicon-32x32.png"
 safari_pinned_tab = "/apple-touch-icon.png"
 
 [params.label]
-icon = "/logo-mono.png"
+icon = "/logo-color.png"
 iconHeight = 35
 text = "Cyberwizard"
 
