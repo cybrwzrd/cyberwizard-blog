@@ -200,6 +200,8 @@ nnoremap <A-n> :tabnext<CR>
 nnoremap <A-p> :tabprev<CR>\
 ```
 
+Move between tabs with `Alt + p/n`.
+
 ```vimrc
 " Pane navigation
 nnoremap <A-h> <C-w>h
@@ -208,29 +210,31 @@ nnoremap <A-k> <C-w>k
 nnoremap <A-j> <C-w>j
 ```
 
+Move between panes with `Ctrl + h/j/k/l`.
+
 ```vimrc
 " Jump between methods
 nnoremap [[ <Action>(MethodUp)
 nnoremap ]] <Action>(MethodDown)
 ```
 
-```vimrc
-" Easy visual indentation
-vnoremap < <gv
-vnoremap > >gv
-```
+Easily move between methods in the current file.
 
 ```vimrc
 " Easy visual indentation
 vnoremap < <gv
 vnoremap > >gv
 ```
+
+Simplify indentation in visual mode, by making the action repeatable.
 
 ```vimrc
 " Popup navigation
 inoremap <C-j> <Action>(PopupMenu-selectNext)
 inoremap <C-k> <Action>(PopupMenu-selectPrev)
 ```
+
+Move between autocomplete pop-up suggestions with `Ctrl+j/k`.
 
 ### Leader commands
 
@@ -346,7 +350,6 @@ map <leader>gc <Action>(CheckinProject)
 map <leader>gs <Action>(ActivateVersionControlToolWindow)
 map <leader>gb <Action>(Git.Branches)
 ```
-
 
 Map git actions to keyboard shortcuts, and nest them under the `<leader>g` group.
 
