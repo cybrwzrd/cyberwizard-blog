@@ -6,7 +6,7 @@ title = "The ultimate IdeaVim setup"
 [cover]
 alt = "Image of a computer keyboard"
 caption = "Keyboard specialists rejoice!"
-hidden = true
+hidden = false
 image = "/uploads/paul-esch-laurent-8ssnfn4vplg-unsplash.jpg"
 relative = true
 
