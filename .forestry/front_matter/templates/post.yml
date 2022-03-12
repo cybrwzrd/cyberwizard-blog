@@ -38,4 +38,5 @@ fields:
     name: relative
     label: relative
 pages:
+- content/posts/the-ultimate-ideavim-setup.md
 - content/posts/the-wonderful-world-of-binary-hex-and-decimal.md
