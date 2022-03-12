@@ -93,11 +93,41 @@ The reason we define the leader key now rather than later, is certain plugins de
 
 ***
 
+In this section, we'll take a look at the best third-party plugins to maximise your IdeaVim experience.
+
 #### Surround
+
+```vimrc
+set surround
+```
+
+Surround is already bundled with native IdeaVim, you simply need to enable it.  Surround lets you change the 'surrounds' of a block of text. For example, you can change double quote characters to single quotes with the following command:
+
+```
+cs"'
+```
+
+This would result in `"Foo bar"` becoming `'Foo bar'`. This can be very handy in languages like Javascript where you may want to change a quoted string to use back-ticks so you can use string templating.
 
 #### Highlighted Yank
 
+```vimrc
+set highlightedyank
+```
+
+Highlighted yank is also already bundled as part of IdeaVim.  The premise of this one is simple, but very useful. When you yank a character, word, or line, it briefly highlights the content you've just yanked.
+
 #### Sneak
+
+```vimrc
+set sneak
+```
+
+[IdeaVim Sneak]() is a port of the Vim-Sneak plugin to IdeaVim. It acts as a drop in overhaul and replacement for Vim's search in line functionality. This one isn't bundled with IdeaVim so you'll need to install the plugin from the link above.
+
+Vim uses `f` and `F` to search forwards and backwards for an instance of a single character in the current line. Sneak uses `s` and `S` to search forwards and backwards _across multiple lines_, and searches for _2 characters_ instead, allowing for much more targeted searching. 
+
+You can use `;` and `,` to move to the next and previous search result, respectively.
 
 #### NerdTree
 
