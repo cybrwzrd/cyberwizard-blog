@@ -139,15 +139,46 @@ NerdTree is bundled with IdeaVim, and allows for Vim-like control over the file 
 
 ```vimrc
 set easymotion
+set notimeout
 ```
 
-[IdeaVim-EasyMotion](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion) is perhaps the single most useful plugin in this section. It completely revolutionises how you move around in Vim.  When you activate easymotion and start typing, it will highlight all instances of the sequence you type, and provide shortcodes which (once typed) will transport the cursor to that particular location.
+[IdeaVim-EasyMotion](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion) is perhaps the single most useful plugin in this section. It completely revolutionises how you move around in Vim.  When you activate easymotion and start typing, it will highlight all instances of the sequence you type, and provide shortcodes which (once typed) will transport the cursor to that particular location. Easymotion isn't bundled with IdeaVim so you'll need to install the plugin using the above link, as well as [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump) which is a peer dependency.
 
+![Easymotion in action](/uploads/easymotion.png)
 
+In the above image, I have activated easymotion and typed `set`. Without having to press `enter`, all the instances have been highlighted, and I can jump to any of thim with a couple of keypresses. So typing `jj` will transport the cursor to the start of line 7. Nifty right!
 
-
+Handy feature - if you type the shortcode _in caps_ it will transport the cursor in _visual mode_, highlighting everything in between.
 
 #### Which-Key
+
+```vimrc
+set which-key
+```
+
+[Which-Key](https://plugins.jetbrains.com/plugin/15976-which-key) is _awesome_. After you press the `leader` key, it will pop-up a modal at the bottom of your screen showing the possible key combinations you can press, and what each of those combinations will do. It even has support for groups!
+
+![Which-key](/uploads/which-key.png)
+
+In the above image, the options in pink are groups, and the options in cyan are single actions. If you press the key for any of the groups, the modal content will change to show the next key option for the group you selected. Very cool.
+
+By default, which-key will detect your keybindings and populate the modal content automatically. However, if you'd like to have friendly and more helpful descriptions for each command (I do), you can customise this behaviour.
+
+```vimrc
+let g:WhichKeyDesc_display = "<leader>d Display options"
+
+let g:WhichKeyDesc_zen_mode = "<leader>dz Toggle Zen mode"
+let g:WhichKeyDesc_df_mode = "<leader>dd Toggle Distraction-Free mode"
+let g:WhichKeyDesc_fullscreen = "<leader>df Toggle full screen"
+```
+
+The first line above sets the help text for the group, and the subsequent lines set the help text for each option in the group. When creating custom key descriptions like this, the syntax is as follows:
+
+```vimrc
+let g:WhichKeyDesc_<identifier> = "<keybinding> <helptext>"
+```
+
+The identifier can be anything you like, it doesn't get displayed anywhere. You'll see more examples in the full `.ideavimrc` file at the end of this blog, but I reccomend checking out the [Which-key documentation](https://github.com/TheBlob42/idea-which-key) for more information about customising the behavoiur.
 
 ### Key mappings
 
