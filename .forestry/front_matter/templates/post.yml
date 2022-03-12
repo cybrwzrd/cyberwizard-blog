@@ -41,6 +41,11 @@ fields:
   type: boolean
   label: Show code copy buttons
   default: true
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
 pages:
 - content/posts/the-ultimate-ideavim-setup.md
 - content/posts/the-wonderful-world-of-binary-hex-and-decimal.md
