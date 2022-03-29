@@ -13,4 +13,3 @@ image = "/uploads/kitchen.png"
 relative = true
 
 +++
-Created in Blender 3.0.
