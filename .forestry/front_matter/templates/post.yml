@@ -47,5 +47,6 @@ fields:
     required: false
   label: Description
 pages:
+- content/posts/a-voxel-kitchen.md
 - content/posts/the-ultimate-ideavim-setup.md
 - content/posts/the-wonderful-world-of-binary-hex-and-decimal.md
